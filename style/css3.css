@@ -1,0 +1,160 @@
+/*Pour faire des colones:*/
+
+.ligne:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/*Style du Menu*/
+.menu{ 
+    position:sticky; 
+    top:0; 
+    left:0; 
+    background-color: #000000;
+    padding: 15px;
+    margin-top: -9px;
+    margin-left: -9px;
+    margin-right: -9px;
+} 
+     
+     
+.menu ul{ 
+    display:flex; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+
+
+.menu li a{ 
+    font-size: 25px;
+
+    color:rgb(255, 255, 255);
+    text-decoration:none; 
+    display:block; 
+    padding: 10px 20px;
+}
+
+
+.menu li a:hover{
+    background-color: #b80000;
+} 
+
+
+.menu li img{
+    display:block; 
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+
+#about {
+    color: #ff4f4f; /*current page = colored*/
+}
+
+
+/*Style search bar*/
+.search{
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 5px;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+    border-radius: 50px;
+}
+
+
+.bar{
+    display: flex;
+}
+
+
+.bar input{
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+
+.bar button{
+    background: transparent;
+    border: 0;
+    padding-top: 5px;
+}
+
+
+.bar button img{
+    width: 25px;
+}
+
+/*body*/
+body{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+img{ align-items: center; /* Ajuste la largeur de l'image à 100% de son conteneur */ 
+     height: auto; /* Maintient le ratio d'aspect de l'image */ 
+     margin: 0 auto; /* Centre l'image horizontalement */ } 
+
+#image-carree {height: 200px;
+    border-radius:50%; 
+
+}
+#animal1 img{height: 200px;
+    border-radius:50%;
+    
+}
+[id*='animal']{
+    text-align: center;
+}
+[id*='animal'] ul {
+  list-style-type: none;
+}
+
+.ligne {
+    display: block;
+    margin-top: 5%;
+    margin-left: 23%;
+    margin-bottom: 5%;
+}
+
+.feed h1{
+    text-align: center;
+}
+
+#feedimg {
+    display: block;
+    margin: auto;
+}
+
+fieldset{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.center{
+    text-align: center;
+}
