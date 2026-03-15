@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style/css1.css">
+        <script src="script.js"></script>
+        <meta name="description" content="..., a site based on a TED conference">
+    	<meta name="keywords" content="...">
+    	<meta name="author" content="Yasmine Ould Dié & Zeinebou Taya">
+		<title>Home page</title>
+    </head>
+
+    
+    <body>
+
+        <div class="menu" id="menu">
+            <ul>
+                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/TED_three_letter_logo.svg/2560px-TED_three_letter_logo.svg.png" alt="Ted logo" width="70px" id="ted"></li>
+                <li><a href="home.html" id="home">Home</a> </li>
+                <li><a href="https://youtu.be/qGISrbDdL_g?si=4Ialk6chLaYN3ZZ4">Video</a> </li>
+                <li><a href="form.html" id="form">Form</a></li>
+                <li><a href="about.html" id="about">About Us</a></li>
+                    
+                    <div class="search">
+                        <form class="bar">
+                        <input type="text" placeholder="Search..." id='searchinput'>
+                        <button type="button" onclick="chercher()"><img src="image/search.png" width="30px"></button>
+                    </form>
+                    </div>
+                    
+            </ul>
+        </div>
+
+        <div id="Top">
+            <img src="https://i.pinimg.com/originals/ed/23/9d/ed239ddc0e23afd424de14db792c6bf8.gif" id="front-img">
+            <div id="message"></div>
+            <h1 id="front-txt">Welcome to AniCalls!</h1>
+            <p class="intro-txt"><em>an idea based on an experiment from the Animal-computer interaction researcher, Ilyena Hirskyj-Douglas.</em></p> 
+            <div class="intro-txt">
+                
+                <p><strong>We proudly present the first social network for your pets!</strong><br>
+                Does it make you sad to leave your pet (or pets) alone at home when you go to work?
+                As of now, let them build their own social life through calls with other animals of their choice!<br>
+                By joining us, you’ll be guided every step of the way to help your pets become more independent while keeping your peace of mind.<br>
+                On top of that, we offer Bluetooth accessories equipped with sensors that allow your pets to use the calling function whenever they want <em>kind of like a remote control</em> <br>
+                Join us on this adventure!<br>
+                Here, it’s not just about cats and dogs, we also have parrots <em>our most active Anicalls users!</em> , as well as pigeons, hedgehogs, monkeys, and many other fun and exotic species!
+                All of this for a maximum of FUN!<br><br>
+                So… are you ready to take your pet on this adventure?</p>
+
+                <button id="toform" onclick="window.location.href='form.html'">Let's do it!</button>
+
+            </div>
+        </div>
+        
+
+        <div id="contenu" >
+
+            <h2>PET-STARS! :</h2>
+            <p><strong>TOP 3</strong> of the most active pet-users:</p>
+
+        <div class="ligne" id="box">
+        <div id="animal1" class="col-4">
+            <img  alt="Parrot-Christen-Owner-Alba" src="image/animal1-parrot.jpg">
+            
+            <ul>
+                <li><strong>Christen</strong></li>
+                <li>Parrot</li>
+                <li>Owner: Alba</li>
+                <li>Calls per day: 7</li>
+                <li>Age: 1 y/o</li>
+                <li>Friends: 10</li>
+            </ul>
+        </div>
+        <div id="animal2" class="col-4">
+            <img alt="Parrot-Pola-Owner-Megan" src="image/animal2-parrot.jpg" id="image-carree">
+            
+            <ul>
+                <li><strong>Pola</strong></li>
+                <li>Parrot</li>
+                <li>Owner: Megan</li>
+                <li>Calls per day: 7</li>
+                <li>Age: 2 y/o</li>
+                <li>Friends: 9</li>
+            </ul>
+        </div>
+        <div id="animal3" class="col-4">
+            <img alt="Marmoset-Mowgli-Owner-Juan" src="image/animal3-monkey.jpg" id="image-carree">
+            
+            <ul>
+                <li><strong>Mowgli</strong></li>
+                <li>Marmoset</li>
+                <li>Owner: Juan</li>
+                <li>Calls per day: 5</li>
+                <li>Age: 3 y/o</li>
+                <li>Friends: 15</li>
+            </ul>
+        </div></div>
+        <div id="comments">
+            <ul>
+                <li><p><strong style="font-size: 20;">Maya</strong>'s commented:</p>
+                    <p><em>08:35 pm</em></p>
+                    <ul>Pets:
+                        <li>Jump</li>
+                        <li>Mini</li>
+                        <li>Plumpy</li>
+                    </ul>
+                    <p>his initiative is so cute and so amazing! My little bunny enjoys it soooo much!</p>
+                </li>
+                
+                
+                <li><p><strong style="font-size: 20;">Lesley</strong>'s commented:
+                    </p><p><em>12:21 pm</em></p>
+                    <ul>Pets:
+                        <li>Rocky</li>
+                        <li>Sonik</li>
+                    </ul>
+                    <p>I enjoy watching Rocky goofing around with random dogs sometimes haha.</p>
+                </li>
+                
+            
+                <li>
+                    <p><strong style="font-size: 20;">Ahmed</strong>'s commented:
+                    </p><p><em>01:06 pm</em></p>
+                    <ul>Pets:
+                        <li>Soussou</li>
+                    </ul>
+                    <p>My cat reacts weird when seeing other animals in a tiny flat box lol. I bet they dont understand a thing.</p>
+                </li>
+            </ul>
+            <div > 
+                <ul id="newComment"></ul>
+            </div>
+            
+            
+            <div id="add-comment" class="div_avec_bordure">
+
+                <form method="post" action="">
+                    <fieldset>
+                        <label for="yourname">Your Name:</label> <input id="yourname" type="text"><br>
+                        <label for="ajout">Your pet's name:</label> 
+                        <div id="ajout"></div>
+                        <input type="button" onclick="ajout()" value="Add a pet" /><br>
+                        <textarea id="comment_value" placeholder="Enter your comment here." style="width: 50%;"></textarea>
+                        <button type="button" onclick="comment()">Send</button>
+                    </fieldset>
+                </form>
+            </div>
+            
+        </div>
+        </div>
+    </body>
+</html>
