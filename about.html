@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style/css3.css">
+		<meta charset="utf-8" />
+		<meta name="description" content="Contact us">
+    	<meta name="keywords" content="...">
+    	<meta name="author" content="Yasmine Ould Dié & Zeinebou Taya">
+		<title>About page</title>
+	</head>
+
+
+    <body>
+
+        <div class="menu" id="menu">
+            <ul>
+                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/TED_three_letter_logo.svg/2560px-TED_three_letter_logo.svg.png" alt="Ted logo" width="70px" id="ted"></li>
+                <li><a href="home.html" id="home">Home</a> </li>
+                <li><a href="https://youtu.be/qGISrbDdL_g?si=4Ialk6chLaYN3ZZ4">Video</a> </li>
+                <li><a href="form.html" id="form">Form</a></li>
+                <li><a href="about.html" id="about">About Us</a></li>
+                    
+                    <div class="search" id="menu">
+                        <form class="bar">
+                        <input type="text" placeholder="Search..." id='searchinput'>
+                        <button type="button" onclick="chercher()"><img src="image/search.png" width="30px"></button>
+                    </form>
+                    </div>
+                    <div id="message"></div>
+            </ul>
+        </div>
+
+        <div id="Top">
+            <div id="Title">
+                <div id="message"></div>
+            </div>
+        </div>
+
+        <div id="contenu">
+            <div class="feed">
+			<h1>Share your feedback and help us improve!</h1>
+			<img src="https://i.pinimg.com/originals/2c/c5/54/2cc55461c35e61bc1c8b05eab4633252.gif" id="feedimg">
+			<br/><br/>
+			<fieldset>
+				<form>
+					<p class="center">
+						<label for="lastname"> Last name :</label>
+						<input type="text" id="lastname" name="profil">
+		
+						<label for="name"> Name :</label>
+						<input type="text" id="name" name="profil">
+		
+						<label for="mail"> Email :</label>
+						<input type="email" id="mail" name="profil">
+						<label for="rate"> On a scale from 1 to 5, rate our website :</label>
+						<select id="rate" name="rating">
+							<option value="1"> 1 </option>
+							<option value="2"> 2 </option>
+							<option value="3"> 3 </option>
+							<option value="4"> 4 </option>
+							<option value="5"> 5 </option>
+						</select>
+						<br/><br/>
+						<label for="com"> Please give us further feedback</label>
+						<textarea id="com" name="com"></textarea>
+						
+						<label for="imp"> Any suggestion for improvement?</label>
+						<textarea id="imp" name="com"></textarea>
+					</p>
+					<div class="button">
+						<p class="center">
+							<button type="submit"> Envoyer </button>
+							<button type="reset"> Réinitialiser </button>
+						</p>
+					</div>
+				</form>
+			</fieldset>
+		</div>
+
+        <div id="contenu" >
+            
+            <div class="ligne" id="box">
+                <div id="animal1" class="col-4">
+                    <img  alt="cat picture" src="https://i.pinimg.com/1200x/9e/21/36/9e21369d8b953e1ce7e134045574c6dd.jpg">
+                    
+                    <ul>
+                        <li><strong>Yasmine Ould Dié</strong></li>
+                        <li>Student at Lyon 2 University</li>
+                        <li>Contact : <a href="mailto:yasmine.ould-die@univ-lyon2.fr">yasmine.ould-die@univ-lyon2.fr</a> </li>
+                    </ul>
+                </div>
+    
+                <div id="aanimal2" class="col-4">
+                    <img alt="cat" src="https://i.pinimg.com/736x/d0/20/9c/d0209cbb229ca1a50b0ecdc98cf92b91.jpg" id="image-carree">
+                        
+                    <ul>
+                        <li><strong>Zeinebou Taya</strong></li>
+                        <li>Student at Lyon 2 University</li>
+                        <li>Contact : <a href="mailto:zeinebou.taya@univ-lyon2.fr">zeinebou.taya@univ-lyon2.fr</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+    </body>
+</html>

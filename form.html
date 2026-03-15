@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="style/css2.css">
+        <script src="script.js"></script>
+        <meta name="description" content="..., a site based on a TED conference">
+    	<meta name="keywords" content="...">
+    	<meta name="author" content="Yasmine Ould Dié & Zeinebou Taya">
+		<title>Form page</title>
+        </head>
+
+        
+    <body>
+
+        <div class="menu" id="menu">
+            <ul>
+                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/TED_three_letter_logo.svg/2560px-TED_three_letter_logo.svg.png" alt="Ted logo" width="70px" id="ted"></li>
+                <li><a href="home.html" id="home">Home</a> </li>
+                <li><a href="https://youtu.be/qGISrbDdL_g?si=4Ialk6chLaYN3ZZ4">Video</a> </li>
+                <li><a href="form.html" id="form">Form</a></li>
+                <li><a href="about.html" id="about">About Us</a></li>
+                    
+                    <div class="search">
+                        <form class="bar">
+                        <input type="text" placeholder="Search..." id='searchinput'>
+                        <button type="button" onclick="chercher()"><img src="image/search.png" width="30px"></button>
+                    </form>
+                    </div>
+                    
+            </ul>
+        </div>
+
+
+        <div id="Top"><div id="Title">
+            <div id="message"></div>
+        </div></div>
+
+        <div id="contenu"><form>
+            <div class="front">
+            <h1>Join Us !</h1>
+            <img src="https://i.pinimg.com/736x/8f/72/63/8f7263f72107238720cc67b94c722f7e.jpg">
+            </div>
+            <fieldset>
+                <legend>Register</legend>
+                <label for="lstname">Last Name*:</label> <input id="lstname" type="text" onblur="checklastname()"><br> <div id="lastnamecheck" class="Empty" ></div>
+                <label for="fstname">First Name*:</label> <input id="fstname" type="text" onblur="checkfirstname()"><br> <div id="firstnamecheck" class="Empty"></div>
+                <label for="email">E-mail*</label> <input id="email" type="text" onblur="checkemail()"><br> <div id="emailcheck" class="Empty"></div>
+                <p>Gender (optional):</p> <label><input id="radio-Man" type="radio" value="Man">Man</label> <br>
+                <label><input id="radio-Woman" type="radio" value="Woman">Woman</label> <br> <label><input id="radio-Other" type="radio" value="Other">Other</label><br>
+                <div id="message_form"></div>
+                <label for="mot"> What is your Motive?</label>
+                <textarea id="mot" name="com"></textarea>
+    
+                <label for="str"> What are your strengths?</label>
+                <textarea id="str" name="com"></textarea>
+            </fieldset>
+
+            <div class="pets">
+            <img src="https://i.pinimg.com/originals/00/d5/f6/00d5f6b33d9d90b59dd007a939eb6378.gif">
+            <fieldset>
+                <legend>Add your Pet(s)!</legend>
+                <div id="ajout_pet"></div>
+                <button  type="button" onclick="ajout_pet()">Add a Pet</button>
+                <div ></div>
+            </fieldset>
+            </div>
+            <fieldset>
+                <legend>Notifications par Mail (optional)</legend>
+                <label><input id="news" type="checkbox" value="news">Vous souhaitez recevoir des Nouvelles et fun fact hebdomadaire de notre Projet.</label>
+                <br><label><input type="checkbox" id="events" value="events">Vous souhaitez être notifié pour les évènements de Anicalls.</label>
+                <br><label><input type="chec kbox" id="no" value="no">Vous ne souhaitez pas être notifié.</label>
+            </fieldset>
+            <button style="margin: auto;" class='tient' type="submit" id='submit' onclick="Submitform()">Sign in</button> <div id="submitmessage"></div>
+        
+        </form></div>
+
+    </body>
+</html>
